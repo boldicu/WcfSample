@@ -1,0 +1,34 @@
+Apare cu .Net 3.0 ca platforma de comunicare (Windows Communication Fundation).
+Inlocuieste web services. Este mult mai capabil.
+API pt majoritatea aplicatiilor. 
+
+Avantaje:
+- Interoperabilitate	- Technology independent (atentie la contract!)
+- Abstractizare			- Contract, izoleaza implementarea de comunicare
+- Securitate			- Criptare mesaj + transport, autentificare (windows credentials)
+- Flexibilitate			- Multiple posibilitati de transport (http, net.tcp, msmq)
+- Serializare mesaj		- XML(SOAP), Binary, JSON, Text
+- Extensibilitate		- Suprascriere mesaj (header, body), serializare
+- Tranzactii distribuite- TransactionFlow
+- Documentation/Community/Tools
+
+Inlocuit de WebAPI, REST => mult mai light, mai usor de configurat, mult mai putin trafic
+
+Tools:
+SVCUtil
+Service Trace Viewer Tool - https://msdn.microsoft.com/en-us/library/ms732023(v=vs.110).aspx
+WCF Test Client
+Configuration Editor
+
+Tips:
+Setarile in aplicatia host
+Volum mare de date - setari
+Call WCF service - https://msdn.microsoft.com/en-us/library/aa355056(v=vs.110).aspx
+Basic vs WsHttp - http://www.codeproject.com/Articles/36396/Difference-between-BasicHttpBinding-and-WsHttpBind
+http://programmers.stackexchange.com/questions/138118/what-security-is-used-by-default-in-wshttpbinding-service-side-or-the-wcf-test
+https://msdn.microsoft.com/en-us/library/ms731299(v=vs.110).aspx
+Timeout - https://msdn.microsoft.com/en-us/library/hh924831(v=vs.110).aspx
+Protocol mapping - https://msdn.microsoft.com/en-us/library/ee816881(v=vs.110).aspx
+FaultContractAttribute - https://msdn.microsoft.com/en-us/library/system.servicemodel.faultcontractattribute(v=vs.110).aspx
+
+
